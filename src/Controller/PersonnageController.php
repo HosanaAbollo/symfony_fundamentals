@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PersonnageController extends AbstractController
 {
     /**
-     * @Route("/personnage", name="personnage")
+     * @Route("/", name="accueil")
      */
     public function index()
     {
@@ -22,7 +22,7 @@ class PersonnageController extends AbstractController
     }
 
     /**
-     * @Route("/persos", name="persos")
+     * @Route("/persos", name="personnages")
      */
     public function persos()
     {
@@ -32,7 +32,7 @@ class PersonnageController extends AbstractController
             "carac" => [
                 "force" => 5,
                 "agi" => 5,
-                "intel" => 
+                "intel" =>10
             ]
         ]);
     }

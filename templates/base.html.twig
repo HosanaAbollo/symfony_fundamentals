@@ -6,12 +6,15 @@
 
         <!-- Inclusion CSS BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        <!-- Inclusion du menu -->
+        {% include "menu.html.twig" %}
 
+        <!-- Titre de la page -->
         <h1 class=" rounded border border-dark bg-primary p-2 m-2 text-white">{%block monTitre %} {% endblock %}</h1>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
 
